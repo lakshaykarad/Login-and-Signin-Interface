@@ -28,7 +28,7 @@ A simple Android application built using Java and XML that provides a basic **Lo
 
 | Splash Screen        | Option Screen        | Sign-Up Screen       | Login Screen         |
 |----------------------|----------------------|----------------------|----------------------|
-| ![Splash](screenshots/Splash.png) | ![Option](screenshots/Option.png) | ![Sign-Up](screenshots/Signup.png) | ![Login](screenshots/Login.png) |
+| ![Splash](Splash.png) | ![Option](Wellcome.png) | ![Sign-Up](screenshots/Signup.png) | ![Login](screenshots/Login.png) |
 
 ---
 
