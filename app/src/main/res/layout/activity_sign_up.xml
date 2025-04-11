@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp_Activity"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/avatar_svgrepo_com"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/backgroundeditview"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:hapticFeedbackEnabled="false"
+                android:text="Upload Image"
+                android:textColor="#E4DCDC"
+                android:textColorHint="#FFFDFD"
+                android:textSize="24sp"
+                android:textStyle="bold|italic" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="160dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#000000"
+                android:hapticFeedbackEnabled="false" />
+
+            <EditText
+                android:id="@+id/editTextText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/backgroundeditview"
+                android:ems="10"
+                android:gravity="center"
+                android:hapticFeedbackEnabled="false"
+                android:hint="Enter Name"
+                android:inputType="text"
+                android:padding="6dp"
+                android:textColor="#922121"
+                android:textColorHint="#FFFAFA" />
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/backgroundeditview"
+                android:ems="10"
+                android:gravity="center"
+                android:hapticFeedbackEnabled="false"
+                android:hint="+91 1234567890"
+                android:inputType="phone"
+                android:padding="6dp"
+                android:textColor="#922121"
+                android:textColorHint="#FFFAFA" />
+
+            <EditText
+                android:id="@+id/editTextTextEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/backgroundeditview"
+                android:ems="10"
+                android:gravity="center"
+                android:hapticFeedbackEnabled="false"
+                android:hint="xyz@gmail.com"
+                android:inputType="textEmailAddress"
+                android:padding="6dp"
+                android:textColor="#922121"
+                android:textColorHint="#FFFAFA" />
+
+            <EditText
+                android:id="@+id/editTextTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/backgroundeditview"
+                android:ems="10"
+                android:gravity="center"
+                android:hapticFeedbackEnabled="false"
+                android:hint="********"
+                android:inputType="textPassword"
+                android:padding="6dp"
+                android:textColor="#922121"
+                android:textColorHint="#FFFAFA" />
+
+            <Button
+                android:id="@+id/Register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/btn_gradient"
+                android:text="Register"
+                android:textColor="#FBF5F5"
+                android:textColorHint="#FFFFFF"
+                android:textColorLink="#060EE6"
+                android:textStyle="bold|italic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="50dp"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_gradient" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:gravity="center_horizontal"
+                    android:text="Or With"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="50dp"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_gradient" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="16dp">
+
+                <!-- Facebook Login Button -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/fbbackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="Facebook Icon"
+                        android:src="@drawable/facebookcolor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="Facebook"
+                        android:textColor="#E9E1E1"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- Google Login Button -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/googlebackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="Google Icon"
+                        android:src="@drawable/googlecolor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="Google"
+                        android:textColor="#E9E1E1"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/AlreadyLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:text="Already have account? Login"
+                android:textColor="#EBEBEB"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
